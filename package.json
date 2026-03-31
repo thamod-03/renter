@@ -1,0 +1,14 @@
+{
+  "name": "renter-monorepo",
+  "version": "1.0.0",
+  "description": "Monorepo for Renter application",
+  "private": true,
+  "scripts": {
+    "start:dev": "concurrently \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
